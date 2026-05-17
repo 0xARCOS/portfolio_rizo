@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background-color: #F5E642;
+    color: #080808;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    background: #111111;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2E2E2E;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F5E642;
+  }
+}
+
+@layer utilities {
+  .writing-mode-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+}
